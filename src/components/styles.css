@@ -1,0 +1,45 @@
+.add-task {
+display: flex;
+width: 90%;
+position: relative;
+align-items: center;
+}
+
+.add-task-input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2;
+    box-shadow: inset 0 0 5px #005C5C;
+}
+
+.add-task-input:focus {
+    box-shadow: 0 0 10px 1000px #005C5C;
+    outline: none;
+}
+
+.add-task-submit {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    font-size: 20px;
+    background-color: #005C5C;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px #005C5C;
+}
+
+.add-task-submit:hover {
+    background-color: #0C2C56;
+}
+
+.add-task-submit:active {
+    transform: scale(.8);
+    background-color: #D50032;
+    box-shadow: 0 0 5px #D50032;
+}

@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AddTask from './components/AddTask';
+import { useState } from 'react';
+import { Todo } from './todomodel';
 
-function App() {
+
+const  App: React.FC = () => {
+  const [todo, setTodo] = useState<string>("")
+  const [todolist, setTodolist] = useState<Todo[]>([]);
+
+  const handleAddingTodoItem = (e: React.FormEvent) => { // React.FormEvent is from stackOverflow could also be React.SyntheticEvent
+    e.preventDefault();
+
+    if (todo) {
+      
+      setTodolist([])
+    }
+    
+  };
+
+  console.log(todo);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="heading">To-Do List</span>
+      <AddTask todo={todo} setTodo={setTodo} handleAddingTodoItem={handleAddingTodoItem}/>
     </div>
   );
 }
