@@ -1,8 +1,8 @@
 .add-task {
-display: flex;
-width: 90%;
-position: relative;
-align-items: center;
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
 }
 
 .add-task-input {
@@ -42,4 +42,56 @@ align-items: center;
     transform: scale(.8);
     background-color: #D50032;
     box-shadow: 0 0 5px #D50032;
+}
+
+.todolist {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+    color: #005C5C;
+}
+
+.todocard {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: silver;
+}
+
+.todocard--text:focus {
+    outline: none;
+}
+
+.todocard_icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.todocard_text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .todocard {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todocard {
+        width: 100%;
+    }
 }
