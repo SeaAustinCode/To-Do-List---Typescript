@@ -2,6 +2,9 @@ Tech Stack: React | Node.js | TypeScript | HTML5 | CSS
 
 Demo: https://youtu.be/yHJzwfEsje4
 
+Preview: <br>
+<img src="https://i.imgur.com/qu9hyQE.png" height="115px" width="600px" />
+
 This project was designed to help create a simple webapp that would help me practice learning TypeScript. While I have previously created a To Do List utilizing React and Javascript I wanted to test out creating a different version using Typescript. 
 
 The main function of this project allows users to create, read, update and delete to do list items
